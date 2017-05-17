@@ -3,6 +3,10 @@
               [mode]="sideNameMode" [opened]="showSideNav">
     <div [ngClass]="{'side-nav-wrapper': showSideNav}">
       <md-nav-list>
+        <!-- nav button focus bug: http://stackoverflow.com/a/42443947/54159 -->
+        <a md-button style="height: 0; position: absolute;"> <!-- 'absorbs' the behavior -->
+        </a>
+
         <a md-list-item href="page1.html">Page 1</a>
         <a md-list-item href="page2.html">Page 2</a>
         <a md-list-item href="page3.html">Page 3</a>
