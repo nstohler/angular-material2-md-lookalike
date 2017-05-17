@@ -1,5 +1,7 @@
 # AngularMaterial2MdLookalike
 
+The goal of this project is to mimic the behaviour of the [Material Design website](https://material.io/guidelines/) using [Angular](https://angular.io/), [Angular Material](https://material.angular.io/) and [Flex-Layout](https://github.com/angular/flex-layout)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
 
 ## Development server
