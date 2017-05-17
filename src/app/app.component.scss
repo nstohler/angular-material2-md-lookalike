@@ -26,23 +26,9 @@ md-sidenav-container, .my-content {
   height: 64px;
 }
 
-/*@media (max-width:600px) {*/
-/*.toolbar-placeholder-fix {*/
-/*height: 54px;*/
-/*}*/
-/*}*/
-
 #side-nav {
-  /*width: 256px;*/
-  /*height: 100vh;*/
-  /*position: fixed;*/
-  /*top: 0;*/
-  /*z-index: 4;*/
-
   border-right: 1px solid rgba(0,0,0,.14);
   bottom: 0;
-  /*background: #fff;*/
-  /*color: #212121;*/
   display: block;
   font-family: Roboto,sans-serif;
   left: 0;
@@ -50,12 +36,12 @@ md-sidenav-container, .my-content {
   top: 0;
   width: 256px;
   z-index: 4;
-  /*transform: translateZ(0);*/
-  /*transform-style: preserve-3d;*/
-  /*transition-delay: .1s;*/
-  /*transition-duration: .2s;*/
-  /*transition-property: transform,left;*/
-  /*transition-timing-function: cubic-bezier(.4,0,.2,1);*/
+  //transform: translateZ(0);
+  //transform-style: preserve-3d;
+  //transition-delay: .1s;
+  //transition-duration: .2s;
+  //transition-property: transform,left;
+  //transition-timing-function: cubic-bezier(.4,0,.2,1);
 }
 
 .main-container {
@@ -70,39 +56,39 @@ md-sidenav-container, .my-content {
 }
 
 .main-box {
-  /*border: solid 1px hotpink;*/
+  //border: solid 1px hotpink;
 }
 
 .fxClass-all {
-  /*border: solid 1px hotpink;*/
-  /*font-style: italic;*/
+  border: solid 1px hotpink;
+  //font-style: italic;
 }
 
 .fxClass-xs {
-  /*background-color: yellow;*/
+  background-color: yellow;
   max-width: 360px!important;
-  /*width: 360px;*/
-  /*max-width: 360px;*/
+  //width: 360px;
+  //max-width: 360px;
 }
 
 .fxClass-sm {
   width: 360px;
-  /*background-color: orange;*/
+  //background-color: orange;
 }
 
 .fxClass-md {
   width: 760px;
-  /*color: white;*/
-  /*background-color: indigo;*/
+  //color: white;
+  //background-color: indigo;
 }
 
 .fxClass-lg {
   width: 1160px;
-  /*background-color: deepskyblue;*/
+  //background-color: deepskyblue;
 }
 
 .fxClass-xl {
-  /*background-color: deeppink;*/
+  //background-color: deeppink;
 }
 
 /*
@@ -114,5 +100,3 @@ md-sidenav-container, .my-content {
   height: auto;
 }
 */
-
-

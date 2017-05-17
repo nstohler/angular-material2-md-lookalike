@@ -9,12 +9,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
-import { CustomBreakPointsModule } from './custom-breakpoints.module';
+import { CustomBreakPointsModule } from './custom-breakpoints/custom-breakpoints.module';
 import { ResizeService } from './services/resize.service';
+import { DemoContentComponent } from './demo-content/demo-content.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DemoContentComponent
   ],
   imports: [
     BrowserModule,
