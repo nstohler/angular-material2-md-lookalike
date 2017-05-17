@@ -1,3 +1,55 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-container [class.dark-theme]="isDarkTheme">
+  <md-sidenav id="side-nav" [ngClass]="{'side-nav-wrapper ui-side-nav-drawer': showSideNav}" #sidenav
+              [mode]="sideNameMode" [opened]="showSideNav">
+    <div [ngClass]="{'side-nav-wrapper': showSideNav}">
+      <md-nav-list>
+        <a md-list-item href="page1.html">Page 1</a>
+        <a md-list-item href="page2.html">Page 2</a>
+        <a md-list-item href="page3.html">Page 3</a>
+      </md-nav-list>
+    </div>
+  </md-sidenav>
+
+  <md-toolbar color="primary">
+    <button *ngIf="enableSideNavToggle" md-icon-button (click)="sidenav.toggle()">
+      <md-icon>menu</md-icon>
+    </button>
+    <span>&nbsp;{{title}}</span>
+
+    <!-- Filler that pushes the menu button to the end of the toolbar -->
+    <span fxFlex></span>
+
+    <button md-icon-button [mdMenuTriggerFor]="themeMenu">
+      <md-icon>more_vert</md-icon>
+    </button>
+  </md-toolbar>
+
+  <button *ngIf="enableSideNavToggle" md-fab class="example-fab" (click)="sidenav.toggle()">
+    <md-icon>add</md-icon>
+  </button>
+
+  <div class="my-content">
+
+    <div class="flex-container" fxFlex>
+      <div fxLayout="column" fxFlex="auto" fxLayoutAlign=" center">
+
+        <div fxLayout="column" fxLayoutAlign=" center"
+             class.xs="fxClass-all fxClass-xs"
+             class.sm="fxClass-all fxClass-sm"
+             class.md="fxClass-all fxClass-md"
+             class.gt-md="fxClass-all fxClass-lg">
+          <div>
+            dark theme: {{isDarkTheme}}<br>
+            <!--<app-normal-content></app-normal-content>-->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <md-menu #themeMenu x-position="before">
+      <button md-menu-item (click)="isDarkTheme = !isDarkTheme">Toggle Theme</button>
+    </md-menu>
+
+  </div>
+</md-sidenav-container>
