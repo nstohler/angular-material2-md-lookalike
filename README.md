@@ -2,6 +2,8 @@
 
 The goal of this project is to mimic the behaviour of the [Material Design website](https://material.io/guidelines/) using [Angular](https://angular.io/), [Angular Material](https://material.angular.io/) and [Flex-Layout](https://github.com/angular/flex-layout)
 
+![material_design](https://cloud.githubusercontent.com/assets/13656701/26148222/3c0d3274-3af6-11e7-9897-8f8c98020f23.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
 
 ## Development server
